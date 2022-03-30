@@ -1,0 +1,96 @@
+/* body {
+    margin: 40px;
+}
+
+#grid {
+    background-color: #444;
+
+}
+
+.container {
+    border: 3px solid black;
+    width: 600px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(16, 100px);
+    grid-template-rows: repeat(16, 100px);
+    grid-auto-flow: column;
+} */
+/* 
+body {
+    margin: 40px;
+  }
+  
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+  }
+  
+  .box:nth-child(even) {
+    background-color: #ccc;
+    color: #000;
+  }
+  
+  .wrapper {
+    width: 600px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-flow: column;
+  } */
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#container {
+    /* display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    /* width: 400px;
+    height: 400px; */
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    background: white;
+    /* border: 1px solid black; */
+}
+
+.grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.hover {
+    position: relative;
+    color: aquamarine;
+}
+
+#button {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border-style: solid;
+    cursor: pointer;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+}
